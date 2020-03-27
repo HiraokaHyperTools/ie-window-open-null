@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>IE window.open null</title>
+</head>
+
+<body>
+    <h1>IE window.open null?</h1>
+
+    <h2>Checker</h2>
+
+    <ul>
+        <li>
+            Try <a href="javascript:void(0)" onclick="tryIt()"><code>window.open('page2.html');</code></a>
+        </li>
+    </ul>
+
+    <p>Note: If you have problem opening above link, you can <a
+            href="https://github.com/HiraokaHyperTools/ie-window-open-null/">check</a>
+        this article.</p>
+
+    <script type="text/javascript">
+        function tryIt() {
+            var handle = window.open('page2.html');
+
+            if (window.console && window.console.log) {
+                window.console.log(handle);
+            }
+
+            alert(handle);
+        }
+    </script>
+</body>
+
+</html>
